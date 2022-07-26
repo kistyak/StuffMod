@@ -1,6 +1,7 @@
 package net.kistyak.stuffmod;
 
 import com.mojang.logging.LogUtils;
+import net.kistyak.stuffmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,8 @@ public class StuffMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public StuffMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
