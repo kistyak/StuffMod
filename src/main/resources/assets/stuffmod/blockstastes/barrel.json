@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "stuffmod:block/barrel" },
+    "facing=east": { "model": "stuffmod:block/barrel", "y": 90 },
+    "facing=south": { "model": "stuffmod:block/barrel", "y": 180 },
+    "facing=west": { "model": "stuffmod:block/barrel", "y": 270 }
+  }
+}
