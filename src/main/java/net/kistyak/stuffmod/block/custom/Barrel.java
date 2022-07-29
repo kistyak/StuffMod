@@ -19,7 +19,7 @@ public class Barrel extends Block {
     public Barrel(Properties properties) {
         super(properties);
     }
-    private static final VoxelShape SHAPE =  Block.box(0, 0, 0, 14, 16, 14);
+    private static final VoxelShape SHAPE =  Block.box(2, 0, 2, 14, 16, 14);
 
     @Override
     public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
